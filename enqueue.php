@@ -1,3 +1,5 @@
+<!-- Ändra pathen -->
+
 <?php 
 
 // Köar in CSS & JS filer
