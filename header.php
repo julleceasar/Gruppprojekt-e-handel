@@ -1,35 +1,31 @@
+<?php
+/**
+ * Header template.
+ * 
+ * @package Projektarbete-e-handel
+ */
+
+ ?>
 <!DOCTYPE html>
-<html>
+<html lang="<?php language_attributes(); ?>">
+<head>
+    <meta charset="<?php bloginfo('charset');?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head();?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template-parts/footer/footer.css">
 
-<head> 
-	<meta charset="UTF-8"/>
-    <title><?php wp_title(); ?></title>
-    <?php wp_head(); ?>
-</head>
-  
-<body> 
+    <body <?php body_class();?>>
 
+    <?php 
+    if (function_exists('wp_body_open')){
+        wp_body_open();
+    }
+    ?>
 
-	<div id="wrap">
+    <div id="page" class="site">
+        <header id="masthead" class="site-header" role="banner">
+        <?php get_template_part('template-parts/header/nav'); ?>
+        </header>
+        <div id="content" class="site-content">
 
-	<header id="header">
-			<div class="container">
-				<div class="row">
-					<div class="">
-
-                    <nav id="nav">
-				        <div class="container">
-					        <div class="row">
-						        <div class="">
-
-                            <!-- Navigerings-Meny -->
-							<?php  wp_nav_menu(array(
-							   'theme_location' => 
-							   ''
-							   ));
-						   ?>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</header>

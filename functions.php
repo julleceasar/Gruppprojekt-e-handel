@@ -1,6 +1,6 @@
 <?php 
 
-include('enqueue.php'); 
+ include('enqueue.php');  
 
 // Adderar features, menu & widegt-support på sidor
 add_theme_support("menus");
@@ -50,7 +50,11 @@ function widget_footer() {
 
 add_action("after_setup_theme", "widget_footer");
 
+
+
 ?>
+
+
 
 
 
