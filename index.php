@@ -21,3 +21,14 @@
 </main>
 
 <?php get_footer(); ?>
+
+<?php $menuarray = [
+								   'theme_location' => 'headermenu',
+								   /* 'menu' => ' ',
+								   'container' => 'div',
+								   'menu_class' => 'collapse navbar-collapse',
+								   'container_class' => 'collapse navbar-collapse' */
+								   
+								   ]; ?>
+			  
+								  <?php wp_nav_menu($menuarray); ?>
