@@ -8,6 +8,8 @@ function register_scripts(){
     wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/style.css'), 'all');
     wp_register_style('styles-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/styles.css'), 'all');
     wp_register_style('bootstrap-css', get_template_directory_uri().'/asset/css/bootstrap.min.css', [], false, 'all');
+    wp_register_style('footer-css', get_template_directory_uri().'/css/footer.css', [], false, 'all');
+    wp_register_style('product-card-css', get_template_directory_uri().'/css/product-card.css', [], false, 'all');
 
 
     //register scripts with update time
@@ -19,6 +21,8 @@ function register_scripts(){
     wp_enqueue_style('style-css');
     wp_enqueue_style('styles-css');
     wp_enqueue_style('bootstrap-css');
+    wp_enqueue_style('footer-css');
+    wp_enqueue_style('product-card-css');
     
     //enqueue scripts
     wp_enqueue_script('script-js');
