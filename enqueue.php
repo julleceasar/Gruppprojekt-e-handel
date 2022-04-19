@@ -2,8 +2,33 @@
 
 <?php 
 
+function register_scripts(){
+
+    //register styles with update time 
+    wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/style.css'), 'all');
+    wp_register_style('styles-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/styles.css'), 'all');
+    wp_register_style('bootstrap-css', get_template_directory_uri().'/asset/css/bootstrap.min.css', [], false, 'all');
+
+
+    //register scripts with update time
+    wp_register_script('bootstrap-js', get_template_directory_uri().'/js/jquery.js', ['jquery'],null, true);
+    wp_register_style('script-js', get_template_directory_uri().'/js/script.js', [], filemtime(get_template_directory().'/js/script.js'), true);
+   
+
+    //enqueue styles
+    wp_enqueue_style('style-css');
+    wp_enqueue_style('styles-css');
+    wp_enqueue_style('bootstrap-css');
+    
+    //enqueue scripts
+    wp_enqueue_script('script-js');
+    wp_enqueue_script('bootstrap-js');
+ }
+
+ add_action( 'wp_enqueue_scripts', 'register_scripts');
+
 // Köar in CSS & JS filer
- function load_scripts() {
+/*  function load_scripts() {
 
     // CSS
     wp_enqueue_style("bootstrap", get_template_directory_uri()."/asset/css/bootstrap.min.css");
@@ -23,6 +48,6 @@
 }
 
 add_action("wp_enqueue_scripts", "load_scripts");
-
+ */
 
 ?> 
