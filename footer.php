@@ -1,22 +1,7 @@
-<footer id="footer">
-			<div class="container">
-				<div class="row top">
-					<div class="">
+<?php get_template_part('template-parts/footer/template-footer'); ?>
+    
 
-					    <div class="">
-
-						    <div class="">
-							<!-- <p>Copyright &copy; Grupp X, 2016</p> -->
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	
-<?php wp_footer(); ?>
-
-</div> 
-
-</body>
-</html>
+	<?php wp_footer();?>
+   
+   </body>
+   </html>

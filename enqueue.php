@@ -3,7 +3,7 @@
 <?php 
 
 // Köar in CSS & JS filer
-function load_scripts() {
+ function load_scripts() {
 
     // CSS
     wp_enqueue_style("bootstrap", get_template_directory_uri()."/asset/css/bootstrap.min.css");
@@ -25,4 +25,4 @@ function load_scripts() {
 add_action("wp_enqueue_scripts", "load_scripts");
 
 
-?>
+?> 
