@@ -1,5 +1,3 @@
-<!-- Ändra pathen -->
-
 <?php 
 
 function register_scripts(){
@@ -8,7 +6,7 @@ function register_scripts(){
     wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/style.css'), 'all');
     wp_register_style('styles-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/styles.css'), 'all');
     wp_register_style('bootstrap-css', get_template_directory_uri().'/asset/css/bootstrap.min.css', [], false, 'all');
-
+    wp_register_style('singele-product-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/single-product.css'), 'all');
 
     //register scripts with update time
     wp_register_script('bootstrap-js', get_template_directory_uri().'/js/jquery.js', ['jquery'],null, true);
@@ -19,6 +17,7 @@ function register_scripts(){
     wp_enqueue_style('style-css');
     wp_enqueue_style('styles-css');
     wp_enqueue_style('bootstrap-css');
+    wp_enqueue_style("singel-product-css");
     
     //enqueue scripts
     wp_enqueue_script('script-js');
