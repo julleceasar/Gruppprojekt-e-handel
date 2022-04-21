@@ -1,5 +1,3 @@
-<!-- Ändra pathen -->
-
 <?php 
 
 function register_scripts(){
