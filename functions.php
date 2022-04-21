@@ -3,13 +3,13 @@
 //Inkluderar filen som köar in alla script
 include('enqueue.php');
 
-// Add features, menu & widegt-supports
+// Adderar features, menu & widegt-support på sidor
 add_theme_support("menus");
 add_theme_support("widgets");
 add_theme_support("post-thumbnails");
 
 
-/* Add Woocommerce */
+
 function add_woocommerce_support(){
 
     add_theme_support('woocommerce');
@@ -19,12 +19,7 @@ function add_woocommerce_support(){
 add_action("after_setup_theme", "add_woocommerce_support");
 
 
-function add_woocommerce_price() {
 
-
-}
-
-add_action("woocommerce_simple_add_to_cart", "add_woocommerce_price");
 
 
 // Functions Menus 
@@ -69,15 +64,12 @@ function widget_footer() {
 
 add_action("after_setup_theme", "widget_footer");
 
-
-
-/* Add bredcrumbs */
-/* 
-add_action("woocommerce_breadcrumb"); */
-
-
-
 ?>
+
+
+
+
+
 
 
 
