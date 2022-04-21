@@ -19,7 +19,10 @@ function add_woocommerce_support(){
 
 add_action("after_setup_theme", "add_woocommerce_support");
 
+/* 
+function product_price() { */
 
+    $product = wc_get_product();
 
 
 
