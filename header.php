@@ -54,11 +54,7 @@
 					 <li class="nav-item">
 						<!-- <a href="#" class="nav-link">KISS</a>  -->
 						<?php $menuarray = [
-								   'theme_location' => 'headermenu',
-								   /* 'menu' => ' ',
-								   'container' => 'div',
-								   'menu_class' => 'collapse navbar-collapse',
-								   'container_class' => 'collapse navbar-collapse' */
+								   'theme_location' => 'headermenu'
 								   
 								   ]; ?>
 			  
