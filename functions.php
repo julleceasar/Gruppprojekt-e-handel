@@ -36,6 +36,7 @@ function register_menu() {
 add_action("after_setup_theme", "register_menu");
 
 
+
 // Functions Image
 
 add_image_size("blogImage_size", 635, 423, true ); 
@@ -43,11 +44,35 @@ add_image_size("blogImage_size", 635, 423, true );
 // Functions sidebar
 function widget_sidebar() {
 
-    register_sidebar(
+
+    
+    register_sidebar( 
         [
-            "name" => "sidebar menu",
-            "id" => "sidebar-menu",
-            "description" => "Sidebar menu"
+        'name' => 'Kontakt Uppgifter',
+        'id' => 'contact',
+        'description' => 'info blabla...',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>'
+        ]
+    );
+    
+    register_sidebar( 
+        [
+        'name' => 'Copy right',
+        'id' => 'copy',
+        'description' => 'info blabla...',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>'
+        ]
+    );
+    
+    register_sidebar( 
+        [
+        'name' => 'Social Media',
+        'id' => 'social',
+        'description' => 'info blabla...',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>'
         ]
     );
 }
