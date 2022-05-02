@@ -1,42 +1,11 @@
 /* 
 Theme Name: Projektarbete e-handel
-Template: Storefront
+Template: oceanwp
 Author: Lisa Karnerfors, Ting Wang, Julius Djudjaku
 Description: Workshop WooCommerce 
 Version: */
 
 /* 
 
-ul a {
-    color: black;
-    text-decoration: none;
-    
-}
 
-.menu {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-}
 
-main {
-    background-color: aqua;
-}
-
-.banner {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    height: 25px;
-    align-items: center;
-    
-}
-
-.banner-text {
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-}
-
- */
