@@ -93,6 +93,10 @@ function widget_footer() {
 
 add_action("after_setup_theme", "widget_footer");
 
+
+
+
+
 ?>
 
 

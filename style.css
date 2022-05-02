@@ -3,9 +3,27 @@ Theme Name: Projektarbete e-handel
 Template: oceanwp
 Author: Lisa Karnerfors, Ting Wang, Julius Djudjaku
 Description: Workshop WooCommerce 
-Version: */
+Version:
+ */ 
 
-/* 
+.banner {
+    background-color: aqua;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    height: 30px;
+    width: 100%;
+    
+}
+
+body {
+    background-color: aqua;
+}
+
+
+
 
 
 
