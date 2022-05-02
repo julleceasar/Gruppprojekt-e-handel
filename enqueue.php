@@ -3,9 +3,10 @@
 function register_scripts(){
 
     //register styles with update time 
-    wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/style.css'), 'all');
-    wp_register_style('styles-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/styles.css'), 'all');
-    wp_register_style('bootstrap-css', get_template_directory_uri().'/asset/css/bootstrap.min.css', [], false, 'all');
+    wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/style.css'), 'all');
+    wp_register_style('sports-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/sports.css'), 'all');
+/*     wp_register_style('styles-css', get_stylesheet_uri(), [], filemtime(get_template_directory().'/css/styles.css'), 'all');
+ */    wp_register_style('bootstrap-css', get_template_directory_uri().'/asset/css/bootstrap.min.css', [], false, 'all');
     wp_register_style('footer-css', get_template_directory_uri().'/css/footer.css', [], false, 'all');
     wp_register_style('product-card-css', get_template_directory_uri().'/css/product-card.css', [], false, 'all');
 
@@ -17,6 +18,9 @@ function register_scripts(){
 
     //enqueue styles
     wp_enqueue_style('style-css');
+    wp_enqueue_style('sports-css');
+
+    wp_enqueue_style('style-min-css');
     wp_enqueue_style('styles-css');
     wp_enqueue_style('bootstrap-css');
     wp_enqueue_style('footer-css');
@@ -25,6 +29,7 @@ function register_scripts(){
     //enqueue scripts
     wp_enqueue_script('script-js');
     wp_enqueue_script('bootstrap-js');
+    
  }
 
  add_action( 'wp_enqueue_scripts', 'register_scripts');
