@@ -1,0 +1,20 @@
+
+
+.clr .page-subheading {
+    display: none;
+}
+
+.page-header {
+    background-color: white;
+    }
+    
+    
+    
+    .trail-items {
+    display: flex;
+    
+    }
+    
+    #main #content-wrap {
+    padding-top: 20px;
+    }
