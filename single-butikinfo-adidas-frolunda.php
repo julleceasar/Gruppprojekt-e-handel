@@ -16,9 +16,6 @@ get_header(); ?>
     <div id="content-wrap" class="container clr">
 			<h1><?php the_title(); ?></h1>
         
-
-	
-     
 			
 <h3><b>Adress:</b> <i><?php the_field('adress'); ?></i>	</h3> 
 
@@ -33,9 +30,6 @@ get_header(); ?>
 	
 
 
-
-	
-    
 
 		
 	</div><!-- #primary -->
