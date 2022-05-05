@@ -82,10 +82,10 @@ add_action("after_setup_theme", "widget_footer");
 
 
 /* Kassan */
-/* add_action('wp','remove_storefront_functions'); */
+/* add_action('wp','remove_oceanwp_functions'); */
 
 
-/* function remove_storefront_functions(){
+/* function remove_oceanwp_functions(){
 
     if (is_checkout()){
 
